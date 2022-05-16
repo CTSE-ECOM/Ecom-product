@@ -8,11 +8,13 @@ spec:
   replicas: 5
   selector:
     matchLabels:
-      app: cts-app
+      app: ctse-app
+      commit: $CI_COMMIT_SHA
   template:
     metadata:
       labels:
-        app: cts-app
+        app: ctse-app
+        commit: $CI_COMMIT_SHA
     spec:
       containers:
         - name: ctse-app
