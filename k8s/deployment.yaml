@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app: ctse-app
+        app: ctse_app
     spec:
       containers:
         - name: ctse-app
