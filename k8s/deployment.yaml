@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: ctse-deployment
   labels:
-    app: ctse_app
+    app: ctse-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: ctse_app
+      app: ctse-app
   template:
     metadata:
       labels:
-        app: ctse_app
+        app: ctse-app
     spec:
       containers:
-        - name: ctse_app
+        - name: ctse-app
           image: deshi97/ctse-assignment:v3
           imagePullPolicy: Always
           ports:
