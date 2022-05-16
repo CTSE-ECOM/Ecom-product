@@ -8,11 +8,11 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: ctse
+      app: ctseapp
   template:
     metadata:
       labels:
-        app: ctse-app
+        app: ctseapp
     spec:
       containers:
         - name: ctse-app
