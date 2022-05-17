@@ -5,16 +5,14 @@ metadata:
   labels:
     app: ctse-app
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: ctse-app
-      commit: $CI_COMMIT_SHA
   template:
     metadata:
       labels:
         app: ctse-app
-        commit: $CI_COMMIT_SHA
     spec:
       containers:
         - name: ctse-app

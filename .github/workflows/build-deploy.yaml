@@ -5,7 +5,7 @@ on:
 env:
   DEPLOYMENT_NAME: ctse-deployment
   PROJECT_ID: ctse-350410
-  GKE_CLUSTER: cluster-1
+  GKE_CLUSTER: ctse-cluster
   GKE_ZONE: asia-south1-a
   CONTAINER_NAME: ctse-app
   CONTAINER_IMAGE_NAME: ctse-assignment
