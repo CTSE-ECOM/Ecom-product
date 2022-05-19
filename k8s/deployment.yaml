@@ -5,14 +5,14 @@ metadata:
   labels:
     app: ctse-app
 spec:
-  replicas: 3
+  replicas: 3 #number of instances in pods
   selector:
-    matchLabels:
+    matchLabels: # This must match the labels set on the pod
       app: ctse-app
   template:
     metadata:
       labels:
-        app: ctse-app
+        app: ctse-app # Set labels on the pod.
     spec:
       containers:
         - name: ctse-app
